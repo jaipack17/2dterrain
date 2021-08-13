@@ -27,9 +27,10 @@ function TerrainModule:gen(cellsize: Vector2, scale: number)
 	
 	--[[
 		this function generates new terrain.
+
 		Instance terrain - cells will be placed inside here
-        Vector2 cellsize - size of each cell
-        number scale - used for perlin noise pattern scale
+        	Vector2 cellsize - size of each cell
+        	number scale - used for perlin noise pattern scale
 	]]--
 
 	local width = self._terrain.AbsoluteSize.x
