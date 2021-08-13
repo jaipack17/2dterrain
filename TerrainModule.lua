@@ -16,11 +16,7 @@ local TerrainModule = {}
 TerrainModule.__index = TerrainModule
 
 function TerrainModule.new(canvas: Instance)
-	local ongen = Instance.new("BindableEvent")
-	ongen.Name = "Generated"
-	ongen.Parent = canvas
-	
-    local self = setmetatable({
+    	local self = setmetatable({
 		_terrain = canvas
 	}, 	TerrainModule)
 	
